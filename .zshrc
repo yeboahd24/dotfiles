@@ -130,9 +130,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 
 
-# For NG Elliot Agent
-export GITLAB_PYPI_TOKEN=""
-export PIP_EXTRA_INDEX_URL="https://__token__:${GITLAB_PYPI_TOKEN}@gitlab.bosonit.com/api/v4/groups/1946/-/packages/pypi/simple"
+# For NG Elliot Agent(Personal)
+#export GITLAB_PYPI_TOKEN=""
+#export PIP_EXTRA_INDEX_URL="https://__token__:${GITLAB_PYPI_TOKEN}@gitlab.bosonit.com/api/v4/groups/1946/-/packages/pypi/simple"
 
 # Syntax highlighting and autosuggestions styling
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
