@@ -4,7 +4,8 @@ Personal configuration files for development environment.
 
 ## Quick Setup
 ```bash
-git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+git clone https://github.com/yeboahd24/dotfiles.git ~/dotfiles
+
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
