@@ -15,7 +15,7 @@
 	rebase = false
 
 [push]
-	default = main
+	default = simple
 	autoSetupRemote = true
 
 [merge]
