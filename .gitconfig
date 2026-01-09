@@ -1,0 +1,82 @@
+[user]
+	name = Dominic Kofi Yeboah
+	email = yeboahd24@gmail.com
+
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+	pager = less -FRX
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	default = main
+	autoSetupRemote = true
+
+[merge]
+	conflictstyle = diff3
+	tool = nvimdiff
+
+[mergetool "nvimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
+[diff]
+	colorMoved = zebra
+	tool = nvimdiff
+
+[difftool]
+	prompt = false
+
+[color]
+	ui = auto
+
+[alias]
+	# Status shortcuts
+	st = status -sb
+	s = status
+	
+	# Log variants
+	l = log --oneline --graph --decorate
+	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	
+	# Commit shortcuts
+	c = commit
+	cm = commit -m
+	ca = commit --amend
+	can = commit --amend --no-edit
+	
+	# Branch management
+	br = branch
+	co = checkout
+	cob = checkout -b
+	
+	# Diff shortcuts
+	d = diff
+	ds = diff --staged
+	dt = difftool
+	
+	# Stash shortcuts
+	ss = stash save
+	sp = stash pop
+	sl = stash list
+	
+	# Other useful commands
+	unstage = reset HEAD --
+	undo = reset --soft HEAD^
+	last = log -1 HEAD
+	aliases = config --get-regexp alias
+
+[rerere]
+	enabled = true
+
+[fetch]
+	prune = true
+
+[rebase]
+	autoStash = true

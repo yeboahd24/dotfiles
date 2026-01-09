@@ -1,0 +1,94 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
+*.iml
+
+# Vim/Neovim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+tags
+
+# Environment and Config
+.env
+.env.local
+.env.*.local
+*.local
+
+# Dependencies
+node_modules/
+bower_components/
+vendor/
+.pnp.*
+
+# Build outputs
+dist/
+build/
+*.log
+*.out
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+__pycache__/
+
+# Package manager locks (optional - some prefer to track these)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage/
+
+# Misc
+.vagrant/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
